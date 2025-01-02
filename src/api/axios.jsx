@@ -11,4 +11,7 @@ const instance = axios.create({
     }
 })
 
+console.log('Base URL:', instance.defaults.baseURL);
+console.log('API Key:', import.meta.env.VITE_MOVIE_DB_API_KEY);
+
 export default instance;
